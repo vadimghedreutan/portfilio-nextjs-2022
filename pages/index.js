@@ -32,7 +32,6 @@ export default function Home({ projects }) {
             <Header />
             <Social />
             <About />
-            {/* share icons */}
           </div>
         </sidebar>
         <main className="col-span-2 p-2">
