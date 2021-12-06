@@ -20,7 +20,7 @@ function Card({ img, alt, title, description, link }) {
       y: 0,
       transition: { duration: 0.8, type: 'spring' },
     },
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 10 },
   }
 
   return (
