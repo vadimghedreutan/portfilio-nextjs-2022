@@ -5,7 +5,7 @@ function Social() {
   return (
     <div className="p-4 mt-5">
       {/* icons */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-3 sm:space-x-4">
         <motion.a
           href="https://www.instagram.com/vadim_ghedreutan/"
           whileTap={{ scale: 0.9 }}

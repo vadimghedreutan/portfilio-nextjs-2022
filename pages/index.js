@@ -34,8 +34,8 @@ export default function Home({ projects }) {
             <About />
           </div>
         </sidebar>
-        <main className="col-span-2 p-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
+        <main className="col-span-2 sm:pb-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
             <Cards projects={projects} />
           </div>
         </main>
