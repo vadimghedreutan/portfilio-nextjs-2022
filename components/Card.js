@@ -1,7 +1,3 @@
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
-import { motion } from 'framer-motion'
-
 function Card({ img, alt, title, description, link }) {
   return (
     <a href={link} className="p-1 sm:p-2 bg-indigo-50 cursor-pointer">
