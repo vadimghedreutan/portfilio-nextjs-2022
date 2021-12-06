@@ -1,37 +1,10 @@
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function Card({ img, alt, title, description, link }) {
-  const animation = useAnimation()
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      animation.start('visible')
-    }
-  }, [animation, inView])
-
-  const defaultVariants = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, type: 'spring' },
-    },
-    hidden: { opacity: 0, y: 10 },
-  }
-
   return (
-    <motion.a
-      href={link}
-      ref={ref}
-      animate={animation}
-      initial="hidden"
-      variants={defaultVariants}
-      className="p-1 sm:p-2 bg-indigo-50 cursor-pointer"
-    >
+    <a href={link} className="p-1 sm:p-2 bg-indigo-50 cursor-pointer">
       <div className="card">
         <img src={img} alt={alt} />
         <div className="card-content">
@@ -41,7 +14,7 @@ function Card({ img, alt, title, description, link }) {
           </div>
         </div>
       </div>
-    </motion.a>
+    </a>
   )
 }
 
