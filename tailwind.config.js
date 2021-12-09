@@ -11,7 +11,7 @@ module.exports = {
 				'3xl': '1920px',
 				'2xs': { max: '640px' },
 				xs: { max: '568px' },
-				'3xs': { max: '370px' },
+				'3xs': { max: '375px' },
 			},
 			fontFamily: {
 				Oswald: ["'Oswald'", 'sans-serif'],

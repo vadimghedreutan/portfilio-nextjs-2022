@@ -43,7 +43,7 @@ export default function Home({ projects }) {
 					</div>
 				</main>
 				{/* mobile */}
-				<section className="sm:hidden 3xs:mt-0 mt-6">
+				{/* <section className="sm:hidden">
 					<div className="flex items-center justify-between">
 						<div className="w-7/12">
 							<img
@@ -59,7 +59,7 @@ export default function Home({ projects }) {
 							</p>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</div>
 		</div>
 	)
