@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import Contact from './Contact'
 
 function Social() {
 	return (
-		<div className="p-4 mt-5">
-			{/* icons */}
+		<div className="relative p-4 mt-2">
+			{/* social */}
 			<div className="flex items-center space-x-3 sm:space-x-4">
 				<motion.a
 					href="https://www.instagram.com/vadim_ghedreutan/"
@@ -35,9 +36,11 @@ function Social() {
 				</motion.a>
 			</div>
 
-			{/* name */}
-			<div className="mt-5 flex flex-col sm:space-y-2 space-y-1">
-				<p className="text-sm sm:text-base">Vadim Ghedreutan</p>
+			{/* title */}
+			<div className="flex flex-col mt-5 space-y-2">
+				<p className="font-semibold text-sm sm:text-base">
+					Vadim Ghedreutan
+				</p>
 				<motion.hr
 					initial={{ width: 0 }}
 					animate={{ width: '3rem' }}
@@ -45,6 +48,9 @@ function Social() {
 					className="w-12 border-solid border-red-500 border-2"
 				/>
 			</div>
+
+			{/* contact */}
+			<Contact />
 		</div>
 	)
 }

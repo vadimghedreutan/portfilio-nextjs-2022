@@ -17,6 +17,23 @@
 }
 
 @layer components {
+	.sidebar {
+		@apply w-full;
+		@apply sm:sticky sm:inset-0
+		sm:flex sm:flex-col sm:min-h-screen;
+	}
+	.container-grid {
+		@apply sm:grid sm:grid-cols-3;
+
+		&_main {
+			@apply sm:col-span-2 sm:pb-1;
+		}
+	}
+	.cards-grid {
+		@apply sm:grid;
+		@apply md:grid-cols-2;
+		@apply xl:grid-cols-3;
+	}
 	.icons {
 		@apply w-6 h-6 sm:w-8 sm:h-8 cursor-pointer 
     hover:scale-125 transition-all duration-500 ease-out;
@@ -32,6 +49,11 @@
 	position: relative;
 	transition: transform 500ms ease;
 	overflow: hidden;
+
+	@media only screen and (max-width: 640px) {
+		width: 302px;
+		height: auto;
+	}
 }
 
 .card-content {

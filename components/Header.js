@@ -36,7 +36,7 @@ function Header() {
 
 	return (
 		<header className="flex items-center justify-between p-4">
-			<h1 className="font-bold text-2xl sm:text-4xl font-Oswald cursor-pointer">
+			<h1 className="font-Oswald font-bold text-2xl sm:text-4xl cursor-pointer">
 				VG<span className="text-red-500">Dev</span>
 			</h1>
 

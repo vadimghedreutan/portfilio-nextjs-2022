@@ -29,22 +29,37 @@ export default function Home({ projects }) {
 				/>
 				<link rel="icon" href="/favicon.png" />
 			</Head>
-			<div className="grid grid-cols-3 min-h-screen">
-				<sidebar className="relative">
-					<div
-						className="w-full sticky inset-0
-          flex flex-col min-h-screen"
-					>
+			<div className="container-grid min-h-screen">
+				<sidebar>
+					<div className="sidebar">
 						<Header />
 						<Social />
 						<About />
 					</div>
 				</sidebar>
-				<main className="col-span-2 sm:pb-1">
-					<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+				<main className="container-grid_main">
+					<div className="cards-grid 2xs:flex 2xs:overflow-x-scroll gap-2 scrollbar-hide">
 						<Cards projects={projects} />
 					</div>
 				</main>
+				{/* mobile */}
+				<section className="sm:hidden 3xs:mt-0 mt-6">
+					<div className="flex items-center justify-between">
+						<div className="w-7/12">
+							<img
+								src="./img/ui_ux-designer_v3.svg"
+								alt="vadim ghedreutan portfolio"
+							/>
+						</div>
+						<div className="flex-1">
+							<p className="flex flex-col font-semibold text-sm space-y-1">
+								<span className="text-red-500">Designed</span>
+								<span>& Coded by me</span>
+								<span>© 2021</span>
+							</p>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 	)
