@@ -24,6 +24,7 @@
 	}
 	.container-grid {
 		@apply sm:grid sm:grid-cols-3;
+		@apply 2xs:flex 2xs:flex-col;
 
 		&_main {
 			@apply sm:col-span-2 sm:pb-1;

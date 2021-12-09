@@ -29,7 +29,7 @@ export default function Home({ projects }) {
 				/>
 				<link rel="icon" href="/favicon.png" />
 			</Head>
-			<div className="container-grid min-h-full">
+			<div className="container-grid min-h-[-webkit-fill-available]">
 				<sidebar>
 					<div className="sidebar">
 						<Header />
@@ -38,12 +38,12 @@ export default function Home({ projects }) {
 					</div>
 				</sidebar>
 				<main className="container-grid_main">
-					<div className="cards-grid 2xs:flex 2xs:overflow-x-scroll gap-2 scrollbar-hide 2xs:snap-x">
+					<div className="cards-grid 2xs:flex 2xs:overflow-x-scroll py-1 gap-2 scrollbar-hide 2xs:snap-x">
 						<Cards projects={projects} />
 					</div>
 				</main>
 				{/* mobile */}
-				<section className="sm:hidden">
+				<section className="sm:hidden flex-1 bg-gray-900 dark:bg-red-500">
 					<div className="flex items-center justify-between">
 						<div className="w-7/12">
 							<img
@@ -51,9 +51,9 @@ export default function Home({ projects }) {
 								alt="vadim ghedreutan portfolio"
 							/>
 						</div>
-						<div className="flex-1">
-							<p className="flex flex-col font-semibold text-sm space-y-1">
-								<span className="text-red-500">Designed &</span>
+						<div className="flex-grow">
+							<p className="flex flex-col font-semibold text-white text-sm space-y-1">
+								<span>Designed &</span>
 								<span>Coded by me</span>
 								<span>© 2021</span>
 							</p>
