@@ -29,7 +29,7 @@ export default function Home({ projects }) {
 				/>
 				<link rel="icon" href="/favicon.png" />
 			</Head>
-			<div className="container-grid min-h-screen">
+			<div className="container-grid min-h-full">
 				<sidebar>
 					<div className="sidebar">
 						<Header />
@@ -43,7 +43,7 @@ export default function Home({ projects }) {
 					</div>
 				</main>
 				{/* mobile */}
-				{/* <section className="sm:hidden">
+				<section className="sm:hidden">
 					<div className="flex items-center justify-between">
 						<div className="w-7/12">
 							<img
@@ -53,13 +53,13 @@ export default function Home({ projects }) {
 						</div>
 						<div className="flex-1">
 							<p className="flex flex-col font-semibold text-sm space-y-1">
-								<span className="text-red-500">Designed</span>
-								<span>& Coded by me</span>
+								<span className="text-red-500">Designed &</span>
+								<span>Coded by me</span>
 								<span>© 2021</span>
 							</p>
 						</div>
 					</div>
-				</section> */}
+				</section>
 			</div>
 		</div>
 	)
