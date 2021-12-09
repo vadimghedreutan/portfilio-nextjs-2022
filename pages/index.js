@@ -38,7 +38,7 @@ export default function Home({ projects }) {
 					</div>
 				</sidebar>
 				<main className="container-grid_main">
-					<div className="cards-grid 2xs:flex 2xs:overflow-x-scroll gap-2 scrollbar-hide">
+					<div className="cards-grid 2xs:flex 2xs:overflow-x-scroll gap-2 scrollbar-hide 2xs:snap-x">
 						<Cards projects={projects} />
 					</div>
 				</main>
