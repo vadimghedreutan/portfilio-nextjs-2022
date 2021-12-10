@@ -36,7 +36,7 @@
 		@apply xl:grid-cols-3;
 	}
 	.icons {
-		@apply w-6 h-6 sm:w-8 sm:h-8 cursor-pointer 
+		@apply w-7 h-7 sm:w-8 sm:h-8 cursor-pointer 
     hover:scale-125 transition-all duration-500 ease-out;
 	}
 }
