@@ -43,7 +43,7 @@ export default function Home({ projects }) {
 					</div>
 				</main>
 				{/* mobile */}
-				<section className="sm:hidden flex-1 bg-gray-900 dark:bg-red-500">
+				<section className="sm:hidden flex-1 bg-[whitesmoke] dark:bg-zinc-900">
 					<div className="flex items-center justify-between">
 						<div className="w-7/12">
 							<img
@@ -52,7 +52,7 @@ export default function Home({ projects }) {
 							/>
 						</div>
 						<div className="flex-grow">
-							<p className="flex flex-col font-semibold text-white text-sm space-y-1">
+							<p className="flex flex-col font-semibold text-gray-500 text-sm space-y-1">
 								<span>Designed &</span>
 								<span>Coded by me</span>
 								<span>© 2021</span>
